@@ -1,23 +1,69 @@
 aid: goodman-group
+
 name: Goodman Group
-description: 'Goodman Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Goodman Group (ASX: GMG) is an Australian-headquartered integrated industrial property group, founded in 1989
+  as a private property trust and renamed Goodman in 2007. It owns, develops and manages industrial property worldwide, including
+  warehouses, large-scale logistics facilities, business and office parks and data centres, mostly developing for tenants
+  and fund clients and earning leasing, development and investment management fees. It was surfaced via the australia-apidays-2026
+  harvest; its website goodman.com answers automated requests with an HTTP 403 bot challenge, and no public API, developer
+  portal or documentation has been identified.'
+
 url: https://raw.githubusercontent.com/api-evangelist/goodman-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Industrial Property
+- Real Estate
+- Logistics
+- Data Centers
+- Property Development
+- Funds Management
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/goodman-group-hosts.yml
+- type: Vendors
+  url: vendors/goodman-group-vendors.yml
+- type: DomainSecurity
+  url: security/goodman-group-domain-security.yml
 - type: Website
   url: https://goodman.com/
+
+apis: []
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: goodman.com returned HTTP 403 to a browser User-Agent during pre-flight (front_door verdict bot-challenge); identity
+    established from third-party sources (Wikipedia) that name goodman.com as the company website. No developer portal, docs
+    or API found.
+  evidence:
+  - url: https://goodman.com/
+    status: 403
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

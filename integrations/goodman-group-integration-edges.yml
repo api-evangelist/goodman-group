@@ -1,0 +1,24 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/goodman-group/integrations
+- https://n8n.io/integrations/goodman-group/
+- https://composio.dev/toolkits/goodman-group
+- https://monid.ai/tools/goodman-group
+checked:
+- https://goodman.com/
+- https://zapier.com/apps/goodman/integrations
+- https://n8n.io/integrations/goodman/
+- https://www.make.com/en/integrations/goodman
+- https://composio.dev/toolkits/goodman-group
+- https://monid.ai/tools/goodman-group
+- https://n8n.io/integrations/goodman-group/
+- https://zapier.com/apps/goodman-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: 'Goodman Group is an industrial property group with no public API, developer portal or documentation identified.
+  goodman.com answers automated requests with HTTP 403 (pre-flight front_door verdict bot-challenge), so no integrations/partners
+  page could be read. No marketplace listing was found. Statuses: https://goodman.com/ 403, https://zapier.com/apps/goodman/integrations
+  404, https://n8n.io/integrations/goodman/ 404, https://www.make.com/en/integrations/goodman 403.'
